@@ -64,7 +64,7 @@ public class AuthController {
     @GetMapping("/get-permission-info")
     @ApiOperation("获取登录用户的权限信息")
     public CommonResult<AuthPermissionInfoRespVO> getPermissionInfo() {
-        // 获得用户信息:接口
+        // 获得用户信息:接口改变
         AdminUserDO user = userService.getUser(getLoginUserId());
         if (user == null) {
             return null;
