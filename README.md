@@ -329,6 +329,16 @@
 | [JUnit](https://junit.org/junit5/)                                                          | Java 单元测试框架      | 5.10.1         | -                                                              |
 | [Mockito](https://github.com/mockito/mockito)                                               | Java Mock 框架     | 5.7.0          | -                                                              |
 
+## 🐷 开发规范
+
+本项目遵循统一的开发规范，确保代码质量和可维护性：
+
+| 规范 | 说明 | 位置 |
+|------|------|------|
+| [项目开发规范](openspec/specs/ruoyi-conventions/spec.md) | 完整的开发规范文档，包括目录结构、模块组织、命名规范、API 接口规范等 | `openspec/specs/ruoyi-conventions/spec.md` |
+| 代码风格 | 遵循《阿里巴巴 Java 开发手册》 | 代码注释详细，42462 行注释 |
+| Git 提交 | 采用 Conventional Commits 规范 | `feat:`、`fix:`、`refactor:` 等前缀 |
+
 ## 🐷 演示图
 
 ### 系统功能

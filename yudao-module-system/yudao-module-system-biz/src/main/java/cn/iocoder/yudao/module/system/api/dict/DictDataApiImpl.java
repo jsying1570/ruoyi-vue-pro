@@ -27,9 +27,16 @@ public class DictDataApiImpl implements DictDataApi {
     }
 
     @Override
+    public String getDictDataLabel(String dictType, Integer value) {
+        DictDataDO dictData = dictDataService.getDictData(dictType, String.valueOf(value));
+        return dictData.getLabel();
+    }
+
+    @Override
     public List<DictDataRespDTO> getDictDataList(String dictType) {
         List<DictDataDO> list = dictDataService.getDictDataListByDictType(dictType);
         return BeanUtils.toBean(list, DictDataRespDTO.class);
     }
+
 
 }

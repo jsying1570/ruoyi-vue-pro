@@ -21,4 +21,11 @@ public interface DictDataApi extends DictDataCommonApi {
      */
     void validateDictDataList(String dictType, Collection<String> values);
 
+    /**
+     * 根据字典类型和字典值，获得对应的标签
+     * @param dictType 类型
+     * @param value 值
+     * @return 值对应的标签
+     */
+    String getDictDataLabel(String dictType, Integer value);
 }
