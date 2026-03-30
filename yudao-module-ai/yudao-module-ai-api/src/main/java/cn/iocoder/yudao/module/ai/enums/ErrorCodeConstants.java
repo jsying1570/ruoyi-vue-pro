@@ -65,4 +65,8 @@ public interface ErrorCodeConstants {
     ErrorCode WORKFLOW_NOT_EXISTS = new ErrorCode(1_040_011_000, "工作流不存在");
     ErrorCode WORKFLOW_CODE_EXISTS = new ErrorCode(1_040_011_001, "工作流标识已存在");
 
+    // ========== AI 智能体 1-040-012-000 ==========
+    ErrorCode AGENT_NOT_EXISTS = new ErrorCode(1_040_012_000, "智能体不存在");
+    ErrorCode AGENT_STATUS_ERROR = new ErrorCode(1_040_012_001, "智能体状态错误");
+
 }
